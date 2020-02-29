@@ -27,7 +27,7 @@ npm
 $ npm i angularjs-thailand-address
 ```
 
-## Then add ngThailandAddress as a dependency for your app:
+Then add ngThailandAddress as a dependency for your app:
 ```
 angular.module('myApp', [require('ngThailandAddress')]);
 ```
