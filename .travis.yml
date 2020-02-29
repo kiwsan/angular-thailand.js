@@ -1,9 +1,22 @@
 language: node_js
 node_js:
-  - "6"
-  
+  - "12"
+branches:
+  only:
+    - angularjs
+cache:
+  directories:
+     - ./node_modules
 install:
   - cd example
   - npm install
 script:
   - npm run build
+  - cd dist && cp index.html 404.html
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: angularjs
