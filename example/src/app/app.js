@@ -2,6 +2,7 @@ import angular from 'angular';
 import ngMaterial from 'angular-material';
 import uirouter from 'angular-ui-router';
 import ngMessages from 'angular-messages';
+import ngCookies from 'angular-cookies';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'angular-material/angular-material.css'
@@ -26,7 +27,7 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [uirouter, ngMaterial, ngMessages, home])
+angular.module(MODULE_NAME, [uirouter, ngMaterial, ngMessages, ngCookies, home])
     .directive('app', app)
     .controller('AppCtrl', AppCtrl)
     .config(routing);

@@ -2,21 +2,19 @@ import angular from 'angular';
 
 function province() {
     return {
-        restrict: 'A',
-        scope: {
-            name: '='
-        },
+        restrict: 'E',
         link: function(scope, element, attrs) {
-            // set up slider on load
-            angular.element(document).ready(function() {
-                $.Thailand({
-                    $province: $(element)
-                });
-            });
+
+            var $input = element.find('input');
+            $input.bind('change', function() {
+                if ($input.val() == "") {
+                    $input.val(0).triggerHandler('input');
+                }
+            })
         }
     }
 }
 
 export default angular.module('directives.province', [])
-    .directive('province', province)
+    .directive('mdProvince', province)
     .name;
