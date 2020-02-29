@@ -1,0 +1,24 @@
+{
+    "name": "angularjs-thailand-address",
+    "version": "1.0.1",
+    "description": "Native Jquery.Thailand.Js for use in Angularjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:kiwsan/angular-thailand.js.git"
+    },
+    "keywords": [
+        "directive",
+        "angularjs"
+    ],
+    "author": "kiwsan",
+    "license": "MIT",
+    "homepage": "https://github.com/kiwsan/angular-thailand.js/blob/angularjs/README.md",
+    "devDependencies": {},
+    "dependencies": {
+        "angular": "^1.7.9"
+    }
+}
