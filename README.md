@@ -9,6 +9,9 @@ Started this project as a design mock up for Fill in an example
 **Design: list your place Mock** - https://dribbble.com/shots/6280948-list-your-place
 
 ## Demo
+[Example](https://kiwsan.github.io/angular-thailand.js/)
+
+## Screenshort
 <img src="https://github.com/kiwsan/angular-thailand.js/blob/angularjs/screenshort.png" alt="Home Screen" width="80%"/>
 
 ## Requirement
