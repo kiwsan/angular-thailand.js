@@ -1,5 +1,7 @@
 Work in progress
 
+[![Build Status](https://travis-ci.org/kiwsan/angular-thailand.js.svg?branch=angularjs)](https://travis-ci.org/kiwsan/angular-thailand.js)
+
 This project fork from 
 [jquery.Thailand.js](https://github.com/earthchie/jquery.Thailand.js)
 
