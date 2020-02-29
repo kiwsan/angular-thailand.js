@@ -5,7 +5,7 @@ This project fork from
 
 ### Example mock from Dribbble
 
-Started this project as a design mock up for Fill in a example
+Started this project as a design mock up for Fill in an example
 **Design: list your place Mock** - https://dribbble.com/shots/6280948-list-your-place
 
 ## Demo
