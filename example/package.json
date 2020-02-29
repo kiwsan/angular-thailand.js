@@ -77,6 +77,9 @@
         "angular-aria": "^1.7.9",
         "angular-material": "^1.1.21",
         "angular-messages": "^1.7.9",
-        "bootstrap": "^4.4.1"
+        "angularjs-thailand-address": "^1.0.2",
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.4.1",
+        "jthailand": "^1.0.0"
     }
 }

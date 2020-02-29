@@ -1,8 +1,8 @@
 class HomeController {
     constructor(private $state: angular.ui.IStateService) {
         'ngInject';
-        // var $ = require('jquery');
-        // $('h1').text('new value');
+        var $ = require('jquery');
+        $('h1').text('new value');
     }
 }
 
