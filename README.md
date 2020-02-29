@@ -9,7 +9,7 @@ Started this project as a design mock up for Fill in an example
 **Design: list your place Mock** - https://dribbble.com/shots/6280948-list-your-place
 
 ## Demo
-[Example](#)
+<img src="https://github.com/kiwsan/angular-thailand.js/blob/angularjs/screenshort.PNG" alt="Home Screen" width="80%"/>
 
 ## Requirement
 - angularjs
