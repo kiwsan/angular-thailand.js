@@ -1,6 +1,6 @@
 {
     "name": "angularjs-thailand-address",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Native jquery.Thailand.js for use in Angularjs",
     "main": "index.js",
     "scripts": {

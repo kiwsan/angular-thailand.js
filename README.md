@@ -17,9 +17,17 @@ Started this project as a design mock up for Fill in an example
 ## Requirement
 - angularjs
 
-## Installation
+## Install
+You can install this package either with npm.
+
+npm
 ```
 $ npm i angularjs-thailand-address
+```
+
+## Then add ngThailandAddress as a dependency for your app:
+```
+angular.module('myApp', [require('ngThailandAddress')]);
 ```
 
 ## How to use
