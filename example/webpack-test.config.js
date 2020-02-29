@@ -1,12 +1,12 @@
 const path = require('path');
+const webpack = require('webpack');
 const ROOT = path.resolve( __dirname, 'src' );
+const DESTINATION = path.resolve( __dirname, 'dist' );
 
 /**
  * Webpack Plugins
  */
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     context: ROOT,
@@ -14,6 +14,8 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js']
     },
+
+    mode: 'development',
 
     module: {
         rules: [
@@ -28,54 +30,41 @@ module.exports = {
                 },
                 enforce: 'pre'
             },
-
+            
             {
                 test: /\.ts$/,
                 exclude: [ /node_modules/ ],
-                use: [
-                    'ng-annotate-loader',
-                    'awesome-typescript-loader'
-                ]
+                use: 'awesome-typescript-loader'
+            },
+            
+            {
+                test: /\.ts$/,
+                exclude: [ 
+                    /node_modules/,
+                    /\.spec\.ts$/
+                ],
+                use: 'istanbul-instrumenter-loader',
+                enforce: 'post'
             },
 
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
-                    use: ['css-loader', 'sass-loader'],
-                    publicPath: '../'
-                }),
+                use: ['style-loader', 'css-loader', 'sass-loader']
             },
 
             {
-                test: /\.(jpg|png|gif)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        esModule: false,
-                    },
-                }],
-            },
-
-            {
-                test: /\.(svg|woff|woff2|eot|ttf)$/,
-                use: 'file-loader?outputPath=fonts/'
+                test: /\.(jpg|png|gif|svg|woff|woff2|eot|ttf)$/,
+                use: 'file-loader'
             },
 
             {
                 test: /.html$/,
-                exclude: /index.html$/,
                 use: 'html-loader'
             }
         ]
     },
 
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'AngularJS - Webpack',
-            template: 'index.html',
-            inject: true
-        }),
         new LoaderOptionsPlugin({
             debug: true,
             options: {
@@ -85,8 +74,9 @@ module.exports = {
                 }
             }
         }),
-        new ExtractTextPlugin('css/style.css')
+
     ],
 
-    entry: './index.ts'
+    devtool: 'inline-source-map',
+    devServer: {}
 };

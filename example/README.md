@@ -1,92 +1,64 @@
-# angularjs-webpack
+# angularjs-webpack-starter
 
-[![Dependency Status](https://david-dm.org/preboot/angularjs-webpack/status.svg)](https://david-dm.org/preboot/angular-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angularjs-webpack/dev-status.svg)](https://david-dm.org/preboot/angularjs-webpack#info=devDependencies)
+[![Greenkeeper badge](https://badges.greenkeeper.io/frederikprijck/angularjs-webpack-starter.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/frederikprijck/angularjs-webpack-starter.svg?branch=master)](https://travis-ci.org/frederikprijck/angularjs-webpack-starter)
+[![Dependencies](https://david-dm.org/frederikprijck/angularjs-webpack-starter/status.svg)](https://david-dm.org/frederikprijck/angularjs-webpack-starter)
+[![DepDependencies](https://david-dm.org/frederikprijck/angularjs-webpack-starter/dev-status.svg)](https://david-dm.org/frederikprijck/angularjs-webpack-starter?type=dev)
+[![Coverage Status](https://coveralls.io/repos/frederikprijck/angularjs-webpack-starter/badge.svg?branch=master)](https://coveralls.io/r/frederikprijck/angularjs-webpack-starter?branch=master)
 
-A complete, yet simple, starter for AngularJS using Webpack.
+The goal of this repository is to demonstrate a modern frontend setup for [AngularJS](https://github.com/angular/angular.js) projects, in such a way that it gets closer to how things are done with Angular. This project is using [NPM](https://github.com/npm/npm) as package manager, [TypeScript](https://github.com/Microsoft/TypeScript) and [Webpack](https://github.com/webpack/webpack) as module loader.
 
-This workflow serves as a starting point for building AngularJS (1.x) applications using Webpack 2.x. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
+This is, by no means, ment to be used blindly in production.
 
-* Heavily commented webpack configuration with reasonable defaults.
-* ES6, and ES7 support with babel.
-* Source maps included in all builds.
-* Development server with live reload.
-* Production builds with cache busting.
-* Testing environment using karma to run tests and jasmine as the framework.
-* Code coverage when tests are run.
-* No gulp and no grunt, just npm scripts.
+## Features
+- [x] TypeScript 2
+- [x] TSLint
+- [x] @types
+- [x] Webpack 4 + Webpack dev server
+- [x] Karma + Jasmine
+- [ ] Protractor
+- [x] Styling using SASS
+- [x] NPM
+- [x] Code Coverage
+- [x] AngularJS 1.6
+- [x] UI Router 1+
+- [x] Strict DI using [ngAnnotate](https://github.com/olov/ng-annotate)
+- [x] Production build containing chunks
 
->Warning: Make sure you're using the latest version of Node.js and NPM
+## Usage
+To use this starter you can simply clone it to your prefered location by using
 
-### Quick start
-
-> Clone/Download the repo then edit `app.js` inside [`/src/app/app.js`](/src/app/app.js)
-
-```bash
-# clone our repo
-$ git clone https://github.com/preboot/angularjs-webpack.git my-app
-
-# change directory to your app
-$ cd my-app
-
-# install the dependencies with npm
-$ npm install
-
-# start the server
-$ npm start
+```
+ git clone https://github.com/frederikprijck/angularjs-webpack-starter.git <directory_name> --depth=1
+ cd <directory_name>
 ```
 
-go to [http://localhost:8080](http://localhost:8080) in your browser.
+and install the dependencies
 
-# Table of Contents
+```
+ npm install
+```
 
-* [Getting Started](#getting-started)
-    * [Dependencies](#dependencies)
-    * [Installing](#installing)
-    * [Running the app](#running-the-app)
-    * [Developing](#developing)
-    * [Testing](#testing)
-* [License](#license)
+Once the repository has been cloned locally, you can use the following CLI commands:
 
-# Getting Started
-
-## Dependencies
-
-What you need to run this app:
-* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
-* Ensure you're running Node (`v4.1.x`+) and NPM (`2.14.x`+)
-
-## Installing
-
-* `fork` this repo
-* `clone` your fork
-* `npm install` to install all dependencies
-
-## Running the app
-
-After you have installed all dependencies you can now run the app with:
-```bash
+```
 npm start
+npm run build
+npm run test
+npm run test:coverage
 ```
 
-It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The port will be displayed to you as `http://localhost:8080`.
+To run the production build, use:
 
-## Developing
+```
+npm run build:prd
+```
 
-### Build files
+If you would like to test the production build by running `http-server`, use
 
-* single run: `npm run build`
-* build files and watch: `npm start`
+```
+npm run serve:prd
+```
 
-## Testing
-
-#### 1. Unit Tests
-
-* single run: `npm test`
-* live mode (TDD style): `npm run test-watch`
-
-## References
-* http://angular-tips.com/blog/2015/06/using-angular-1-dot-x-with-es6-and-webpack/
-
-# License
-
-[MIT](/LICENSE)
+## Contributions
+Feel free to open an issue or create a PR.
