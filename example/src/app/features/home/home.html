@@ -1,0 +1,33 @@
+<div id="home-header" class="jumbotron">
+  <greeting name="home.name"></greeting>
+</div>
+
+<button class="btn btn-primary" ng-click="home.changeName()">Change</button>
+<button class="btn btn-danger" ng-click="home.randomName()">Random</button>
+
+<p>province: {{district}}</p>
+<p>province: {{amphoe}}</p>
+<p>province: {{province}}</p>
+<p>zipcode: {{zipcode}}</p>
+
+<br />
+
+<md-input-container class="md-block" flex-gt-xs>
+  <label>District</label>
+  <input id="district" ng-model="district">
+</md-input-container>
+
+<md-input-container class="md-block" flex-gt-xs>
+  <label>Amphoe</label>
+  <input id="amphoe" ng-model="amphoe">
+</md-input-container>
+
+<md-input-container class="md-block" flex-gt-xs>
+  <label>Province</label>
+  <input id="province" ng-model="province">
+</md-input-container>
+
+<md-input-container class="md-block" flex-gt-xs>
+  <label>Zip code</label>
+  <input id="zipcode" ng-model="zipcode">
+</md-input-container>
