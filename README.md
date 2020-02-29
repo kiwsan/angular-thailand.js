@@ -17,65 +17,33 @@ $ npm i angularjs-thailand-address
 ## How to use
 
 ```html
-<md-address class="row">
+<md-address>
 
-  <div class="col-md-12">
-    <md-input-container class="md-block" flex-gt-xs>
-      <label>Address 1</label>
-      <input name="address1" ng-model="address.address1" required>
-    </md-input-container>
-  </div>
+  <label>Address 1</label>
+  <input name="address1" ng-model="address.address1" required>
 
-  <div class="col-md-12">
-    <md-input-container class="md-block" flex-gt-xs>
-      <label>Address 2 (optional)</label>
-      <input name="address2" ng-model="address.address2">
-    </md-input-container>
-  </div>
+  <label>Address 2 (optional)</label>
+  <input name="address2" ng-model="address.address2">
 
-  <div class="col-md-6">
-    <md-district>
+  <md-district>
+    <label>District</label>
+    <input name="district" ng-model="address.district" required>
+  </md-district>
 
-      <md-input-container class="md-block" flex-gt-xs>
-        <label>District</label>
-        <input name="district" ng-model="address.district" required>
-      </md-input-container>
+  <md-amphoe>
+    <label>Amphoe</label>
+    <input name="amphoe" ng-model="address.amphoe" required>
+  </md-amphoe>
 
-    </md-district>
-  </div>
+  <md-province>
+    <label>Province</label>
+    <input name="province" ng-model="address.province" required>
+  </md-province>
 
-  <div class="col-md-6">
-    <md-amphoe>
-
-      <md-input-container class="md-block" flex-gt-xs>
-        <label>Amphoe</label>
-        <input name="amphoe" ng-model="address.amphoe" required>
-      </md-input-container>
-
-    </md-amphoe>
-  </div>
-
-  <div class="col-md-6">
-    <md-province>
-
-      <md-input-container class="md-block" flex-gt-xs>
-        <label>Province</label>
-        <input name="province" ng-model="address.province" required>
-      </md-input-container>
-
-    </md-province>
-  </div>
-
-  <div class="col-md-6">
-    <md-zipcode>
-
-      <md-input-container class="md-block" flex-gt-xs>
-        <label>Zipcode</label>
-        <input name="zipcode" ng-model="address.zipcode" required>
-      </md-input-container>
-
-    </md-zipcode>
-  </div>
+  <md-zipcode>
+    <label>Zipcode</label>
+    <input name="zipcode" ng-model="address.zipcode" required>
+  </md-zipcode>
 
 </md-address>
 ```
