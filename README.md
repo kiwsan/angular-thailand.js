@@ -20,7 +20,7 @@ Started this project as a design mock up for Fill in an example
 - angularjs
 
 ## Install
-You can install this package either with npm.
+You can install this package with npm.
 
 npm
 ```
