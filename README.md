@@ -18,6 +18,8 @@ Started this project as a design mock up for Fill in an example
 
 ## Requirement
 - angularjs
+- jquery
+- corejs-typeahead
 
 ## Install
 You can install this package with npm.

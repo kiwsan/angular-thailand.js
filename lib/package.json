@@ -1,6 +1,6 @@
 {
     "name": "angularjs-thailand-address",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Native jquery.Thailand.js for use in Angularjs",
     "main": "index.js",
     "scripts": {
@@ -19,6 +19,7 @@
     "homepage": "https://github.com/kiwsan/angular-thailand.js/blob/angularjs/README.md",
     "devDependencies": {},
     "dependencies": {
-        "angular": "^1.7.9"
+        "angular": "^1.7.9",
+        "jqljs": "^0.3.2"
     }
 }
