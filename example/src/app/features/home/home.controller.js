@@ -2,13 +2,6 @@ export default class HomeController {
     constructor(randomNamesService) {
         this.random = randomNamesService;
         this.name = 'World';
-
-        $.Thailand({
-            $district: $('#district'),
-            $amphoe: $('#amphoe'),
-            $province: $('#province'),
-            $zipcode: $('#zipcode'),
-        });
     }
 
     changeName() {

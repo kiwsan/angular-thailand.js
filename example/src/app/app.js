@@ -4,6 +4,12 @@ import uirouter from 'angular-ui-router';
 import ngMessages from 'angular-messages';
 import ngCookies from 'angular-cookies';
 
+//import $ from 'jquery';
+
+// shim window namespace so existing app code relying on globals works
+//window.jQuery = $;
+//window.$ = $;
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'angular-material/angular-material.css'
 import '../style/app.css';

@@ -28,7 +28,8 @@
         "angular-messages": "^1.7.9",
         "angular-ui-router": "^1.0.25",
         "angularjs-thailand-address": "^1.0.3",
-        "bootstrap": "^4.4.1"
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.4.1"
     },
     "devDependencies": {
         "ajv": "^6.4.0",
