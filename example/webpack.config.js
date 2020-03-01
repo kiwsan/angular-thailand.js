@@ -31,7 +31,8 @@ module.exports = function makeWebpackConfig() {
      * Karma will set this when it's a test build
      */
     config.entry = isTest ? void 0 : {
-        app: './src/app/app.js'
+        app: './src/app/app.js',
+        vendor: './src/vendor.js'
     };
 
     /**
@@ -170,9 +171,16 @@ module.exports = function makeWebpackConfig() {
         }),
         // https://webpack.js.org/plugins/provide-plugin/
         new webpack.ProvidePlugin({
-            //'window.jQuery': 'jquery'
+            //'window.jQuery': 'jquery',
+            'JQL': 'jqljs'
         })
     ];
+
+    config.externals = {
+        // require("jquery") is external and available
+        //  on the global var jQuery
+        //"jquery": "jQuery"
+    }
 
     // Skip rendering index.html in test mode
     if (!isTest) {
