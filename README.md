@@ -1,5 +1,7 @@
 # Angular Thailand.js
 
+Work in progress
+
 Native jquery.Thailand.js for use in [AngularJs](https://angularjs.org/)
 
 [![Build Status](https://travis-ci.org/kiwsan/angular-thailand.js.svg?branch=angularjs)](https://travis-ci.org/kiwsan/angular-thailand.js)
@@ -29,6 +31,11 @@ You can install this package with npm.
 npm
 ```
 $ npm i angularjs-thailand-address
+```
+
+Add style sheet:
+```
+import 'angularjs-thailand-address/angularjs-thailand-address.css'
 ```
 
 Then add ngThailandAddress as a dependency for your app:

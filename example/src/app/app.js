@@ -12,7 +12,7 @@ import ngCookies from 'angular-cookies';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'angular-material/angular-material.css'
-import 'jthailand/jquery.Thailand.js/dist/jquery.Thailand.min.css';
+import 'angularjs-thailand-address/angularjs-thailand-address.css'
 import '../style/app.css';
 
 import routing from './app.config';

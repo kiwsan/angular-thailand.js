@@ -1,8 +1,8 @@
 {
     "name": "angularjs-thailand-address",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Native jquery.Thailand.js for use in Angularjs",
-    "main": "index.js",
+    "main": "angularjs-thailand-address.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -17,9 +17,9 @@
     "author": "kiwsan",
     "license": "MIT",
     "homepage": "https://github.com/kiwsan/angular-thailand.js/blob/angularjs/README.md",
-    "devDependencies": {},
-    "dependencies": {
-        "angular": "^1.7.9",
+    "devDependencies": {
+        "angular": "1.4 - 1.7.0 || ^1.7.2",
+        "corejs-typeahead": "^1.3.0",
         "jqljs": "^0.3.2"
     }
 }

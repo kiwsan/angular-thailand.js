@@ -5,7 +5,7 @@ import routing from './home.routes';
 import HomeController from './home.controller';
 import randomNamesService from '../../services/random-names.service';
 import greetingDirective from '../../directives/greeting.directive';
-import ngThailandAddress from 'angularjs-thailand-address'
+import ngThailandAddress from '../../../../../lib/angularjs-thailand-address'
 
 import './home.css';
 
