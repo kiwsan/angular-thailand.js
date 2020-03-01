@@ -172,7 +172,7 @@ module.exports = function makeWebpackConfig() {
         // https://webpack.js.org/plugins/provide-plugin/
         new webpack.ProvidePlugin({
             //'window.jQuery': 'jquery',
-            'JQL': 'jqljs'
+            //'JQL': 'jqljs'
         })
     ];
 
